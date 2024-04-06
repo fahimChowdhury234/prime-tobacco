@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "sequence": 1,
+      "product_img": "./serises-1.png",
+      "product_title": "Product Title 1",
+      "product_variant": "four",
+      "isFeatures": true
+    },
+    {
+      "id": 2,
+      "sequence": 2,
+      "product_img": "./serises-2.png",
+      "product_title": "Product Title 2",
+      "product_variant": "lime",
+      "isFeatures": true
+    },
+    {
+      "id": 3,
+      "sequence": 3,
+      "product_img": "./serises-3.png",
+      "product_title": "Product Title 3",
+      "product_variant": "lemon",
+      "isFeatures": true
+    },
+    {
+      "id": 4,
+      "sequence": 4,
+      "product_img": "./serises-4.png",
+      "product_title": "Product Title 4",
+      "product_variant": "bluberry",
+      "isFeatures": true
+    },
+    {
+      "id": 5,
+      "sequence": 5,
+      "product_img": "./serises-1.png",
+      "product_title": "Product Title 5",
+      "product_variant": "four",
+      "isFeatures": false
+    },
+    {
+      "id": 6,
+      "sequence": 6,
+      "product_img": "./serises-2.png",
+      "product_title": "Product Title 6",
+      "product_variant": "lime",
+      "isFeatures": false
+    },
+    {
+      "id": 7,
+      "sequence": 7,
+      "product_img": "./serises-3.png",
+      "product_title": "Product Title 7",
+      "product_variant": "lemon",
+      "isFeatures": false
+    },
+    {
+      "id": 8,
+      "sequence": 8,
+      "product_img": "./serises-4.png",
+      "product_title": "Product Title 8",
+      "product_variant": "bluberry",
+      "isFeatures": false
+    },
+    {
+      "id": 9,
+      "sequence": 9,
+      "product_img": "./serises-1.png",
+      "product_title": "Product Title 9",
+      "product_variant": "four",
+      "isFeatures": false
+    },
+    {
+      "id": 10,
+      "sequence": 10,
+      "product_img": "./serises-2.png",
+      "product_title": "Product Title 10",
+      "product_variant": "lime",
+      "isFeatures": false
+    },
+    {
+      "id": 11,
+      "sequence": 11,
+      "product_img": "./serises-3.png",
+      "product_title": "Product Title 11",
+      "product_variant": "lemon",
+      "isFeatures": false
+    },
+    {
+      "id": 12,
+      "sequence": 12,
+      "product_img": "./serises-4.png",
+      "product_title": "Product Title 12",
+      "product_variant": "bluberry",
+      "isFeatures": false
+    },
+    {
+      "id": 13,
+      "sequence": 13,
+      "product_img": "./serises-1.png",
+      "product_title": "Product Title 13",
+      "product_variant": "four",
+      "isFeatures": false
+    },
+    {
+      "id": 14,
+      "sequence": 14,
+      "product_img": "./serises-2.png",
+      "product_title": "Product Title 14",
+      "product_variant": "lime",
+      "isFeatures": false
+    },
+    {
+      "id": 15,
+      "sequence": 15,
+      "product_img": "./serises-3.png",
+      "product_title": "Product Title 15",
+      "product_variant": "lemon",
+      "isFeatures": false
+    },
+    {
+      "id": 16,
+      "sequence": 16,
+      "product_img": "./serises-4.png",
+      "product_title": "Product Title 16",
+      "product_variant": "bluberry",
+      "isFeatures": false
+    },
+    {
+      "id": 17,
+      "sequence": 17,
+      "product_img": "./serises-1.png",
+      "product_title": "Product Title 17",
+      "product_variant": "four",
+      "isFeatures": false
+    },
+    {
+      "id": 18,
+      "sequence": 18,
+      "product_img": "./serises-2.png",
+      "product_title": "Product Title 18",
+      "product_variant": "lime",
+      "isFeatures": false
+    },
+    {
+      "id": 19,
+      "sequence": 19,
+      "product_img": "./serises-3.png",
+      "product_title": "Product Title 19",
+      "product_variant": "lemon",
+      "isFeatures": false
+    },
+    {
+      "id": 20,
+      "sequence": 20,
+      "product_img": "./serises-4.png",
+      "product_title": "Product Title 20",
+      "product_variant": "bluberry",
+      "isFeatures": false
+    }
+  ]
+  

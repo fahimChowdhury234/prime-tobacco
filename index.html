@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Tobacco</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-xl bg-transparent container">
+
+            <div class="offcanvas offcanvas-start" id="navbarOffcanvas" tabindex="-1"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            width="32" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+
+                    </button>
+
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav justify-content-end  pe-3">
+                        <ul class="navbar-nav mb-2 mb-lg-0 gap-4 text-uppercase align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html" target="_self" title="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./flavors.html" target="_self" title="">
+                                    Flavors
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_self" title="">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_self" title="">Contacts</a>
+                            </li>
+                            <li class="nav-item d-lg-none">
+                                <div class="select-dropdown-wrapper">
+                                    <div class="select-dropdown">
+                                        <button href="#" role="button" data-value="" class="select-dropdown__button">
+                                            <span class="select-dropdown__content">
+                                                <img src="./assets/img/eng.png" alt="">
+                                                <span>English</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </button>
+                                        <ul class="select-dropdown__list">
+                                            <li data-value="1" class="select-dropdown__list-item">
+                                                <a href="./index.html" class="d-flex align-items-center ">
+                                                    <img src="./assets/img/eng.png" alt="">
+                                                    <span>English</span>
+                                                </a>
+                                            </li>
+                                            <li data-value="2" class="select-dropdown__list-item">
+                                                <a href="./ar/index.html" class="d-flex align-items-center ">
+                                                    <img src="./assets/img/ar.webp" alt="">
+                                                    <span>Arabic</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="navbar-brand logo d-flex align-items-center gap-2" href="./index.html">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+            <div class="navbar-brand-bg-shape">
+                <img src="./assets/img/Vector.png" alt="">
+            </div>
+
+            <div class="dropdown-lg">
+                <div class="select-dropdown-wrapper">
+                    <div class="select-dropdown">
+                        <button href="#" role="button" data-value="" class="select-dropdown__button">
+                            <span class="select-dropdown__content">
+                                <img src="./assets/img/eng.png" alt="">
+                                <span>English</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </button>
+                        <ul class="select-dropdown__list">
+                            <li data-value="1" class="select-dropdown__list-item">
+                                <a href="./index.html" class="d-flex align-items-center ">
+                                    <img src="./assets/img/eng.png" alt="">
+                                    <span>English</span>
+                                </a>
+                            </li>
+                            <li data-value="2" class="select-dropdown__list-item">
+                                <a href="./ar/index.html" class="d-flex align-items-center ">
+                                    <img src="./assets/img/ar.webp" alt="">
+                                    <span>Arabic</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button class="navbar-toggler bg-transparent text-black px-3 py-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16 7H3C2.448 7 2 6.552 2 6C2 5.448 2.448 5 3 5H16C16.552 5 17 5.448 17 6C17 6.552 16.552 7 16 7ZM22 12C22 11.448 21.552 11 21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12ZM13 18C13 17.448 12.552 17 12 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H12C12.552 19 13 18.552 13 18Z"
+                        fill="#ED5034" />
+                </svg>
+
+
+            </button>
+
+
+        </nav>
+        <div class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="hero-text-content">
+                            <div class="">
+                                <h1>Prime EXPREIENCE</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna aliquam erat volutpat. Ut wisi
+                                    enim ad Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit, sed diam nonummy nibh euismod
+                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    Ut wisi enim ad
+                                </p>
+                            </div>
+                            <div class="hero-btns d-flex gap-4 mt-4">
+                                <button class="btn-1">
+                                    Contact us
+                                </button>
+                                <button class="btn-2 d-flex gap-3 align-items-center">
+                                    explore
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <img src="./assets/img/right-arrow.svg" alt="">
+                                        <img src="./assets/img/right-arrow.svg" alt="">
+                                        <img src="./assets/img/right-arrow.svg" alt="">
+
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hero-img">
+                            <img src="./assets/img/hero-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="about-img">
+                            <img src="./assets/img/about.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-content">
+                            <div class="">
+                                <h1>About us</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet
+                                    dolore magna aliquam erat volutpat. Ut wisi enim
+                                    adLorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna aliquam era ad
+                                </p>
+                                <button>
+                                    More detalies...
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section prime-series-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>prime series</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt <br>
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                    </p>
+                </div>
+                <div class="row productContainer">
+
+                </div>
+                <a href="./flavors.html">
+                    More detAILS...
+                </a>
+            </div>
+        </section>
+        <section class="section partner-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="partner-content">
+                            <span>Do you want to Work With Us ?</span>
+                            <h2>Become A Partner</h2>
+                            <p>
+                                Join Prime Tobacco on our mission to redefine the global
+                                hookah experience through unparalleled quality and
+                                innovative flavors. We're seeking partners who are as
+                                passionate about craftsmanship and cultural diversity as
+                                we are. By collaborating with us, you'll benefit from
+                                high-quality products, tailored support, and the
+                                opportunity to captivate a growing market of
+                                enthusiasts. Let's embark on this journey together and
+                                make every puff a celebration of excellence. Contact us
+                                to explore how we can succeed together
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="partner-img">
+                            <img src="./assets/img/partner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contact-section">
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="contact-content">
+                            <div class="contact-content-title mb-4">
+                                <span>For more information...</span>
+                                <h2>contact us:</h2>
+                            </div>
+                            <div>
+                                <label for="#">Map Location:</label>
+                                <div class="map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387137.52447532254!2d-74.25987278955078!3d40.69766358298851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf2c9cc2ef%3A0xf5d4d595885390b8!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1625541146466!5m2!1sen!2sus"
+                                        height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-deatiles">
+                            <img src="./assets/img/logo.png" alt="">
+                            <h3>
+                                Prime Tobacco Hookah Tobacco <br>
+                                industry Ltd. Sti.
+                            </h3>
+                            <ul>
+                                <li>
+                                    <svg width="28" height="35" viewBox="0 0 28 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7299 34.7498C13.3599 34.0498 13.0199 33.3798 12.6599 32.7398C11.1699 30.0898 9.23993 27.7699 7.16993 25.5599C5.87993 24.1799 4.58994 22.7999 3.36994 21.3599C1.92994 19.6599 0.869955 17.7298 0.509955 15.4898C-4.48227e-05 12.3098 0.569936 9.29985 2.23994 6.54985C4.38994 2.99985 7.55997 0.819738 11.65 0.189738C15.89 -0.470262 19.65 0.689884 22.84 3.58988C25.05 5.60988 26.4099 8.12987 26.9399 11.0699C27.5899 14.6599 26.79 17.9498 24.51 20.7898C22.86 22.8398 21.04 24.7497 19.28 26.6997C17.12 29.0797 15.1799 31.6099 13.8599 34.5699C13.8299 34.6099 13.7899 34.6498 13.7299 34.7498ZM13.8099 20.4397C18.0199 20.3997 21.3899 16.9497 21.3599 12.6997C21.3299 8.57975 17.8299 5.14973 13.6799 5.17973C9.47994 5.20973 6.05992 8.67969 6.09992 12.8897C6.13992 17.0797 9.60994 20.4797 13.8099 20.4397Z"
+                                            fill="#E20913" />
+                                    </svg>
+                                    Malıköy Başkent OSB 19. Cd. No:38
+                                </li>
+                                <li>
+                                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.680064 8.43976C6.4075e-05 4.54976 7.11007 -3.0903 10.3101 2.8797C15.4601 9.5497 3.04009 7.70975 9.52009 16.6797C13.9001 22.9597 17.3601 10.0398 22.0301 19.6898C22.7401 21.1898 22.2301 22.6099 20.8301 23.7999C11.4001 30.6999 0.590064 18.5198 0.680064 8.43976Z"
+                                            fill="#E20913" />
+                                    </svg>
+                                    +90 000 000 00 00 / +90 000 000 00 00
+                                </li>
+                                <li>
+                                    <svg width="29" height="27" viewBox="0 0 29 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.73 26.3096C10.83 26.3096 6.93008 26.3096 3.03008 26.3096C1.97008 26.3096 1.19003 25.8295 0.730034 24.8895C0.580034 24.5695 0.490044 24.1897 0.490044 23.8397C0.470044 19.5697 0.480034 15.2896 0.480034 11.0196C0.480034 10.7496 0.480034 10.4896 0.480034 10.2196C0.470034 9.93955 0.590071 9.72965 0.830071 9.56965C2.37007 8.54965 3.91007 7.51959 5.45007 6.50959C5.58007 6.41959 5.64006 6.3295 5.63006 6.1695C5.62006 5.7095 5.62006 5.2396 5.63006 4.7696C5.63006 4.3396 5.89005 4.08967 6.31005 4.08967C7.16005 4.08967 8.01004 4.08966 8.86004 4.07966C8.99004 4.07966 9.14004 4.02954 9.24004 3.95954C10.93 2.84954 12.61 1.72969 14.29 0.609687C14.64 0.369687 14.8501 0.369687 15.2001 0.609687C16.8901 1.72969 18.5701 2.85955 20.2601 3.96955C20.3601 4.02955 20.49 4.07966 20.61 4.07966C21.45 4.08966 22.28 4.07966 23.12 4.07966C23.63 4.07966 23.87 4.31965 23.87 4.81965C23.87 5.26965 23.88 5.71951 23.87 6.17951C23.87 6.31951 23.9201 6.40956 24.0301 6.47956C25.5501 7.48956 27.07 8.50959 28.6 9.50959C28.89 9.69959 29.0101 9.9296 29.0101 10.2696C29.0101 14.7696 29.0101 19.2696 29.0101 23.7696C29.0101 25.2196 27.92 26.2996 26.47 26.2996C22.55 26.3096 18.64 26.3096 14.73 26.3096ZM27.7001 11.4195C27.6101 11.4795 27.5601 11.5196 27.5101 11.5596C25.6201 12.9496 23.7301 14.3396 21.8401 15.7196C21.2701 16.1396 20.7101 16.5596 20.1401 16.9696C19.7201 17.2696 19.17 17.0396 19.11 16.5396C19.08 16.2596 19.21 16.0595 19.43 15.8995C20.42 15.1795 21.41 14.4396 22.41 13.7196C22.54 13.6196 22.5901 13.5197 22.5901 13.3597C22.5801 10.7697 22.5901 8.18968 22.5901 5.59968C22.5901 5.52968 22.5901 5.45946 22.5901 5.37946C17.3501 5.37946 12.14 5.37946 6.91003 5.37946C6.91003 5.46946 6.91003 5.54946 6.91003 5.62946C6.91003 8.19946 6.91003 10.7697 6.91003 13.3497C6.91003 13.5197 6.96003 13.6296 7.10003 13.7296C8.11003 14.4596 9.11004 15.1995 10.11 15.9295C10.39 16.1295 10.47 16.4296 10.35 16.7196C10.24 16.9896 9.95008 17.1497 9.65008 17.0897C9.53008 17.0597 9.40004 16.9995 9.30004 16.9195C6.88004 15.1495 4.47004 13.3697 2.05004 11.5997C1.97004 11.5397 1.89004 11.4895 1.80004 11.4195C1.80004 15.4895 1.80004 19.5197 1.80004 23.5897C1.91004 23.5097 2.00007 23.4495 2.08007 23.3895C6.15007 20.3995 10.22 17.4195 14.29 14.4295C14.62 14.1895 14.8701 14.1895 15.2001 14.4195C15.7001 14.7795 16.2001 15.1496 16.7001 15.5196C20.3101 18.1696 23.9201 20.8196 27.5301 23.4696C27.5801 23.5096 27.64 23.5497 27.72 23.5997C27.7 19.5197 27.7001 15.4895 27.7001 11.4195ZM2.29003 24.8096C2.53003 24.9896 2.78004 25.0296 3.05004 25.0296C6.77004 25.0296 10.4801 25.0296 14.2001 25.0296C18.2901 25.0296 22.39 25.0296 26.48 25.0296C26.73 25.0296 26.96 24.9696 27.18 24.8096C27.1 24.7496 27.0301 24.6995 26.9601 24.6395C22.9501 21.6995 18.93 18.7496 14.93 15.8096C14.78 15.6996 14.69 15.6996 14.54 15.8096C10.51 18.7696 6.49008 21.7195 2.46008 24.6795C2.41008 24.7195 2.36003 24.7696 2.29003 24.8096ZM5.60003 12.6295C5.60003 11.0495 5.60003 9.4995 5.60003 7.9195C4.47003 8.6695 3.36004 9.40949 2.24004 10.1595C3.37004 10.9895 4.47003 11.7995 5.60003 12.6295ZM23.87 12.6295C25 11.7995 26.1 10.9895 27.23 10.1595C26.1 9.40949 25 8.6695 23.87 7.9195C23.87 9.5095 23.87 11.0495 23.87 12.6295ZM11.4001 4.06965C13.6501 4.06965 15.8401 4.06965 18.0201 4.06965C18.0201 4.02965 18 4.01959 17.98 4.00959C16.93 3.30959 15.8801 2.6095 14.8301 1.9195C14.7801 1.8895 14.6801 1.89951 14.6301 1.92951C14.2801 2.14951 13.94 2.37969 13.6 2.60969C12.88 3.07969 12.1601 3.55965 11.4001 4.06965Z"
+                                            fill="#E20913" />
+                                        <path
+                                            d="M15 11.4293C14.54 11.8293 14.04 11.9394 13.49 11.7294C12.99 11.5394 12.7 11.1395 12.63 10.6195C12.52 9.76952 12.77 9.00929 13.36 8.38929C13.77 7.94929 14.28 7.77928 14.88 7.87928C15.16 7.92928 15.37 8.08948 15.56 8.32948C15.6 8.18948 15.63 8.06935 15.66 7.94935C15.98 7.94935 16.28 7.94935 16.61 7.94935C16.53 8.31935 16.46 8.66943 16.39 9.02943C16.27 9.60943 16.14 10.1894 16.03 10.7694C16.01 10.8594 16.03 11.0094 16.09 11.0494C16.15 11.0894 16.3 11.0694 16.38 11.0194C17.03 10.6494 17.38 10.0695 17.44 9.33949C17.55 8.12949 16.72 7.16945 15.46 7.04945C15.02 7.00945 14.56 7.01951 14.13 7.10951C12.94 7.33951 12.16 8.20935 11.94 9.44935C11.85 9.96935 11.85 10.4994 12.03 10.9994C12.29 11.7194 12.77 12.2394 13.5 12.4894C14.45 12.8194 15.42 12.8294 16.38 12.5394C16.79 12.4194 17.15 12.1895 17.45 11.8695C17.5 11.8095 17.6 11.7694 17.68 11.7594C17.88 11.7394 18.07 11.7594 18.27 11.7594C18.28 11.7794 18.3 11.7995 18.31 11.8195C18.13 12.0395 17.97 12.2894 17.77 12.4894C17.31 12.9394 16.74 13.1895 16.12 13.3095C15.22 13.4895 14.32 13.4493 13.44 13.1893C12.06 12.7693 11.36 11.7495 11.24 10.3695C11.19 9.76952 11.27 9.18928 11.48 8.62928C12.02 7.24928 13.06 6.51952 14.52 6.36952C15.17 6.29952 15.81 6.34951 16.42 6.60951C17.39 7.00951 17.95 7.73942 18.09 8.76942C18.24 9.85942 17.85 10.7593 16.98 11.4293C16.57 11.7493 16.09 11.8595 15.57 11.8295C15.29 11.8095 15.19 11.7293 15 11.4293ZM13.49 10.2394C13.5 10.2494 13.52 10.2494 13.53 10.2594C13.56 10.4194 13.57 10.5794 13.62 10.7294C13.72 11.0394 13.98 11.2193 14.29 11.1493C14.48 11.1093 14.71 11.0095 14.83 10.8595C15.26 10.3395 15.43 9.72946 15.32 9.05946C15.24 8.58946 14.77 8.37948 14.34 8.57948C14.09 8.68948 13.9 8.87928 13.81 9.12928C13.69 9.48928 13.6 9.86939 13.49 10.2394Z"
+                                            fill="#E20913" />
+                                    </svg>
+                                    info@prime-tobacco.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="footer ">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <p class="copyright">Prime Tobacco © 2024 All rights reserved.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-logo">
+                            <img src="./assets/img/logo.png" alt="" class="logo-f">
+                            <div class="shape">
+                                <img src="./assets/img/Vector (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <img src="./assets/img/tiktok.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/instagram.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/linkedin.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/youtube.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/twiter.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/facebook.svg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <img src="./assets/img/logo.png" alt="" class="popup-logo">
+                    <img src="./assets/img/Vector.png" alt="" class="popup-shape">
+                </div>
+                <div class="popup-body">
+                    <p>You must meet the legal age +18 requirement to access this website.</p>
+                    <h2>
+                        are you over 18 years of age ?
+                    </h2>
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <button id="closePopup">
+                            yes
+                        </button>
+                        <button>no</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="scrollToTop">
+            <svg width="30" height="37" viewBox="0 0 30 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.19 10.2201C9.70998 12.6601 7.51009 14.9402 5.17009 17.0602C4.51009 17.6502 3.4601 18.0302 2.5601 18.0802C1.4701 18.1402 0.679989 17.3402 0.319989 16.2702C-0.0700108 15.1002 0.230018 14.0901 1.10002 13.2301C4.99002 9.33014 8.88006 5.42018 12.7701 1.52018C12.8601 1.43018 12.9401 1.34018 13.0401 1.27018C14.2701 0.230175 15.8 0.190224 16.94 1.32022C20.98 5.31022 24.99 9.32026 28.98 13.3603C30.18 14.5703 30.0901 16.3501 28.9201 17.4401C27.7501 18.5301 26.22 18.4701 24.96 17.2401C22.93 15.2501 20.9401 13.2301 18.9301 11.2301C18.6401 10.9401 18.3401 10.6801 17.7901 10.1601C17.7901 10.8701 17.7901 11.2901 17.7901 11.7101C17.7901 18.8701 17.7901 26.0201 17.7901 33.1801C17.7901 33.6301 17.8 34.0902 17.75 34.5302C17.58 35.9502 16.38 37.0102 14.98 37.0002C13.57 37.0002 12.38 35.9402 12.24 34.5102C12.17 33.8202 12.2 33.1101 12.2 32.4101C12.2 25.5401 12.2 18.6702 12.2 11.8102C12.19 11.3702 12.19 10.9301 12.19 10.2201Z"
+                    fill="white" />
+            </svg>
+
+        </button>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(".select-dropdown__button").on("click", function () {
+            $(".select-dropdown__list").toggleClass("active");
+        });
+        $(".select-dropdown__list-item").on("click", function () {
+            var itemValue = $(this).data("value");
+            var itemText = $(this).text();
+            var itemImageSrc = $(this).find('img').attr('src');
+
+            $(".select-dropdown__button .select-dropdown__content").html(
+                `<img src="${itemImageSrc}" alt=""><span>${itemText}</span>`);
+            $(".select-dropdown__button").attr("data-value", itemValue);
+            $(".select-dropdown__list").toggleClass("active");
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const productContainer = document.querySelector('.productContainer');
+
+            // Function to fetch and display products
+            function fetchAndDisplayProducts() {
+                fetch('data.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Filter the data array to get only the products where isFeatures is true
+                        const featuredProducts = data.filter(product => product.isFeatures);
+                        // Construct HTML for each product and append it to the container
+                        featuredProducts.forEach(product => {
+                            productContainer.innerHTML += `
+                                <div class="col-md-3">
+                                <div class="prime-series-box">
+                                    <div class="prime-series-img ${product.product_variant.toLowerCase().replace(" ", "-")}">
+                                    <img src="./assets/img/${product.product_img}" alt="">
+                                    </div>
+                                    <div class="prime-series-text">
+                                    <h3>${product.product_title}</h3>
+                                    </div>
+                                </div>
+                                </div>
+                            `;
+                        });
+                    })
+                    .catch(error => console.error('Error fetching products:', error));
+            }
+
+            // Initial fetch and display of products
+            fetchAndDisplayProducts();
+
+            let popup = document.getElementById("popup");
+            let shouldShowPopup = localStorage.getItem("showPopup");
+            console.log(shouldShowPopup !== "false");
+            if (shouldShowPopup !== "false") {
+                popup.style.display = "flex";
+            } else {
+                popup.style.display = "none";
+            }
+            document.getElementById("closePopup").addEventListener("click", function () {
+                popup.style.display = "none";
+                localStorage.setItem("showPopup", "false");
+            });
+            document.getElementById("scrollToTop").addEventListener('click', (() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Smooth scrolling behavior
+                });
+            }))
+
+
+
+            // Show the button when user scrolls down
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("scrollToTop").style.display = "block";
+                } else {
+                    document.getElementById("scrollToTop").style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
