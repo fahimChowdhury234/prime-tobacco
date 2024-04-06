@@ -8,7 +8,10 @@
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
@@ -39,11 +42,11 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" target="_self" title="">About Us</a>
+                                <a class="nav-link" href="./index.html#about" target="_self" title="">About Us</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#" target="_self" title="">Contacts</a>
+                                <a class="nav-link" href="./index.html#contact" target="_self" title="">Contacts</a>
                             </li>
                             <li class="nav-item d-lg-none">
                                 <div class="select-dropdown-wrapper">
@@ -137,7 +140,7 @@
 
 
         </nav>
-        <div class="sub-page-header">
+        <div class="sub-page-header" data-aos="fade-right">
             <h1>
                 OUR FLAVORS
             </h1>
@@ -145,14 +148,14 @@
         <section class="serises-section section">
             <div class="container ">
                 <div class="serises-section-title">
-                    <div class="serises-section-title-shape">
+                    <div class="serises-section-title-shape" data-aos="zoom-in">
                         prime series
                     </div>
                 </div>
-                <div class="row" id="productContainer">
+                <div class="row" id="productContainer" data-aos="fade-down-left">
 
                 </div>
-                <button id="viewMoreBtn">
+                <button id="viewMoreBtn" data-aos="zoom-in-up">
                     view more
                 </button>
             </div>
@@ -212,7 +215,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
+        AOS.init({
+            duration: 700,
+            offset: 200,
+        });
         $(".select-dropdown__button").on("click", function () {
             $(".select-dropdown__list").toggleClass("active");
         });
