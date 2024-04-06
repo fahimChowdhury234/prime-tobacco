@@ -963,6 +963,7 @@ a {
     .contact-deatiles {
         width: 100%;
         padding: 10px;
+        margin: 0;
     }
 
     .footer .copyright,
@@ -1049,6 +1050,16 @@ a {
     .serises-section button {
         font-size: 20px;
         height: 50px;
+    }
+
+    #scrollToTop {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    #scrollToTop svg {
+        width: 26px;
+        height: 26px;
     }
 
 }
@@ -1157,7 +1168,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 99;
+    z-index: 999999;
     background-color: #E20913;
     color: #fff;
     border: none;
