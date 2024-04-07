@@ -296,7 +296,7 @@ a {
 .prime-series-box:hover .hover-img {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    /* transform: scale(1); */
 
 }
 
@@ -687,7 +687,7 @@ a {
     top: 0;
     left: 0;
     z-index: 999;
-    transform: scale(0.6);
+    /* transform: scale(0.6); */
 }
 
 .serises-box span {
