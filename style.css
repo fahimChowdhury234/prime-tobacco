@@ -1120,7 +1120,9 @@ a {
         height: 50px;
     }
 
-
+    .hover-img {
+        left: auto;
+    }
 
     #scrollToTop {
         width: 50px !important;
