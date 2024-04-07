@@ -249,10 +249,18 @@
                     .then(data => {
                         // Slice the data array to get the subset to display
                         const productsToDisplay = data.slice(start, end);
+                        let currentIndex = 0;
                         // Construct HTML for each product and append it to the container
                         productsToDisplay.forEach(product => {
+
+                            const animationDirection = currentIndex % 2 === 0 ? 'fade-right' :
+                                'fade-left';
+
+                            // Update the index for the next iteration
+                            currentIndex++;
+
                             productContainer.innerHTML += `
-                            <div class="col-md-3">
+                            <div class="col-md-3"  data-aos="${animationDirection}">
                             <div class="serises-box ${product.product_variant.toLowerCase().replace(" ", "-")}">
                                 <div class="shape">
                                 <svg width="285" height="286" viewBox="0 0 285 286" fill="none" xmlns="http://www.w3.org/2000/svg">

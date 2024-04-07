@@ -873,6 +873,7 @@ a {
     .navbar-expand-xl .offcanvas {
         width: 70%;
         background-color: #0a0a0a;
+        z-index: 999999;
     }
 
     .hero-section {
@@ -882,6 +883,16 @@ a {
 
     .hero-section .row .col-md-6 {
         margin-bottom: 60px;
+    }
+
+    .hero-text-content a {
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 30px;
     }
 
     .hero-section .row .col-md-6:nth-child(2) {
