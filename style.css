@@ -286,6 +286,7 @@ a {
 .prime-series-img {
     border-radius: 40px;
     position: relative;
+    background-color: #000;
 }
 
 .prime-series-box:hover .main-img {
@@ -326,6 +327,7 @@ a {
     border-radius: 40px 40px 12px 12px;
     top: -14px;
     left: 8%;
+    z-index: -1;
 
 }
 
@@ -481,7 +483,9 @@ a {
     text-align: center;
 }
 
-.contact-deatiles ul li {
+.contact-deatiles ul li {}
+
+.contact-deatiles ul li a {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -491,7 +495,6 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-
 }
 
 .footer {
@@ -805,7 +808,6 @@ a {
 .select-dropdown__list-item {
     display: block;
     list-style-type: none;
-    padding: 10px 20px;
     background: var(--secondary-color);
     font-size: 16px;
     line-height: 1.4;
@@ -823,6 +825,7 @@ a {
 
 .select-dropdown__list-item a {
     color: var(--text-color);
+    padding: 10px 20px;
 
     width: 100%;
     text-transform: uppercase;
