@@ -1,0 +1,61 @@
+CAPTIONS
+========
+HOME: الرئيسية
+FLAVORS: النكهات
+ABOUT US: من نحن
+CONTACTS: اتصل بنا
+EXPLORE: استكشف
+PRIME EXPREIENCE: تجربة رائدة
+PRIME SERIES: السلسلة الممتازة
+MORE DETAILS: المزيد من التفاصيل
+Become A Partner: كن شريكًا
+Do you want to Work With Us ?: هل ترغب في العمل معنا؟
+OUR FLAVORS: نكهاتنا
+VIEW MORE: عرض المزيد
+
+
+SECTIONS 
+==========
+UNDER PRIME EXPERIENCE: {
+	ENGLISH: At PRIME TOBACCO, "Prime Experience" encapsulates our essence. 
+	We elevate every aspect of hookah enjoyment, from the superior quality 
+	of our blends to the excellence in customer service. Our commitment 
+	ensures that with every puff, you're not just smoking hookah; you're 
+	partaking in a curated journey of taste and aroma. Choose PRIME TOBACCO 
+	for an experience that redefines pleasure and quality in every draw.
+	ARABIC:  في شركة "برايم توباكو"، "تجربة رائدة" تجسد جوهرنا. نحن نرتقي بكل جانب من جوانب متعة الشيشة، بدءًا من جودة مزيجنا الفائقة إلى التميز في خدمة العملاء. يضمن التزامنا أنك بكل نفخة لست فقط تدخن الشيشة؛ بل تشارك في رحلة مختارة من الطعم والرائحة. اختر "برايم توباكو" لتجربة تعيد تعريف المتعة والجودة في كل سحبة.
+
+}
+UNDER ABOUT US: {
+	ENGLISH: PRIME TOBACCO, where tradition meets innovation in the 
+	art of hookah tobacco production. Our journey began with a deep-rooted 
+	passion for crafting exceptional hookah/shisha tobacco blends that honor 
+	our heritage while embracing global flavors and cultures.
+
+    At the heart of our brand lies a commitment to quality, authenticity, 
+	and craftsmanship. Our tobacco leaves are carefully selected from the 
+	finest sources around the world, ensuring each puff delivers a rich, 
+	smooth, and unparalleled experience. Our artisans, with decades of 
+	combined experience, blend traditional techniques with modern innovations 
+	to create unique flavors that cater to both connoisseurs and newcomers alike.
+	ARABIC: برايم توباكو، حيث تلتقي التقاليد بالابتكار في فن إنتاج تبغ الشيشة. بدأت رحلتنا مع شغف عميق بصناعة مزيج استثنائي من تبغ الشيشة/النرجيلة الذي يكرم تراثنا مع احتضان النكهات والثقافات العالمية.
+في قلب علامتنا التجارية يكمن التزام بالجودة، والأصالة، والحرفية. يتم اختيار أوراق التبغ لدينا بعناية من أفضل المصادر حول العالم، لضمان توفير كل نفخة تجربة غنية، ناعمة، ولا مثيل لها. يمزج حرفيونا، الذين يمتلكون عقودًا من الخبرة المجمعة، بين التقنيات التقليدية والابتكارات الحديثة لخلق نكهات فريدة تناسب كل من الخبراء والجدد على حد سواء.
+
+
+
+
+
+
+
+}
+UNDER BECOME A PARTNER: {
+	ENGLISH: Join PRIME TOBACCO on our mission to redefine the global hookah
+	experience through unparalleled quality and innovative flavors. We're 
+	seeking partners who are as passionate about craftsmanship and cultural 
+	diversity as we are. By collaborating with us, you'll benefit from high-quality 
+	products, tailored support, and the opportunity to captivate a growing market of enthusiasts. 
+	Let's embark on this journey together and make every puff a celebration of excellence. 
+	Contact us to explore how we can succeed together.
+	ARABIC: انضم إلى برايم توباكو في مهمتنا لإعادة تعريف تجربة الشيشة العالمية من خلال جودة لا مثيل لها ونكهات مبتكرة. نحن نبحث عن شركاء يشاركوننا الشغف نفسه تجاه الحرفية والتنوع الثقافي. من خلال التعاون معنا، ستستفيد من منتجات ذات جودة عالية، دعم مُصمم خصيصًا لك، وفرصة لجذب سوق متنامي من المتحمسين. دعونا نبدأ هذه الرحلة معًا ونجعل كل نفخة احتفالاً بالتميز. اتصل بنا لاستكشاف كيف يمكننا أن ننجح معًا.
+
+}
