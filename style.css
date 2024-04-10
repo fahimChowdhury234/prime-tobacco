@@ -164,6 +164,11 @@ a {
 
 }
 
+.hero-img-ar::before {
+    left: 22%;
+
+}
+
 .section {
     padding: 80px 0;
 }
