@@ -6,225 +6,295 @@
       "hover_img": "./serises-2.png",
       "product_title": "Product Title 1",
       "product_title_ar": "عنوان المنتج 1",
-
       "product_variant": "four",
-      "isFeatures": true
+      "isFeatures": true,
+      "category": "prime series"
    },
    {
       "id": 2,
       "sequence": 2,
       "product_img": "./serises-2.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 2",
       "product_title_ar": "عنوان المنتج 2",
-
       "product_variant": "lime",
-      "isFeatures": true
+      "isFeatures": true,
+      "category": "prime series"
    },
    {
       "id": 3,
       "sequence": 3,
       "product_img": "./serises-3.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 3",
       "product_title_ar": "عنوان المنتج 3",
-
       "product_variant": "lemon",
-      "isFeatures": true
+      "isFeatures": true,
+      "category": "mixes"
    },
    {
       "id": 4,
       "sequence": 4,
       "product_img": "./serises-4.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 4",
       "product_title_ar": "عنوان المنتج 4",
-
       "product_variant": "bluberry",
-      "isFeatures": true
+      "isFeatures": true,
+      "category": "prime series"
    },
    {
       "id": 5,
       "sequence": 5,
       "product_img": "./serises-1.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 5",
       "product_title_ar": "عنوان المنتج 5",
-
       "product_variant": "four",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "prime series"
    },
    {
       "id": 6,
       "sequence": 6,
       "product_img": "./serises-2.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 6",
       "product_title_ar": "عنوان المنتج 6",
-
       "product_variant": "lime",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "mixes"
    },
    {
       "id": 7,
       "sequence": 7,
       "product_img": "./serises-3.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 7",
       "product_title_ar": "عنوان المنتج 7",
-
       "product_variant": "lemon",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "prime series"
    },
    {
       "id": 8,
       "sequence": 8,
       "product_img": "./serises-4.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 8",
       "product_title_ar": "عنوان المنتج 8",
-
       "product_variant": "bluberry",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "prime series"
    },
    {
       "id": 9,
       "sequence": 9,
       "product_img": "./serises-1.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 9",
       "product_title_ar": "عنوان المنتج 9",
-
       "product_variant": "four",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "mixes"
    },
    {
       "id": 10,
       "sequence": 10,
       "product_img": "./serises-2.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 10",
       "product_title_ar": "عنوان المنتج 10",
-
       "product_variant": "lime",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "prime series"
    },
    {
       "id": 11,
       "sequence": 11,
       "product_img": "./serises-3.png",
       "hover_img": "./serises-2.png",
-
       "product_title": "Product Title 11",
       "product_title_ar": "عنوان المنتج 11",
-
       "product_variant": "lemon",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "classics"
    },
+
    {
       "id": 12,
       "sequence": 12,
-      "product_img": "./serises-4.png",
-      "hover_img": "./serises-2.png",
-
-      "product_title": "Product Title 12",
-      "product_title_ar": "عنوان المنتج 12",
-      "product_variant": "bluberry",
-      "isFeatures": false
-   },
-   {
-      "id": 13,
-      "sequence": 13,
       "product_img": "./serises-1.png",
       "hover_img": "./serises-2.png",
-
-      "product_title": "Product Title 13",
-      "product_title_ar": "عنوان المنتج 13",
+      "product_title": "Product Title 1",
+      "product_title_ar": "عنوان المنتج 1",
       "product_variant": "four",
-      "isFeatures": false
+      "isFeatures": false,
+      "category": "prime series"
+   },
+   {
+      "id": 12,
+      "sequence": 13,
+      "product_img": "./serises-2.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 2",
+      "product_title_ar": "عنوان المنتج 2",
+      "product_variant": "lime",
+      "isFeatures": false,
+      "category": "classics"
    },
    {
       "id": 14,
       "sequence": 14,
-      "product_img": "./serises-2.png",
+      "product_img": "./serises-3.png",
       "hover_img": "./serises-2.png",
-
-      "product_title": "Product Title 14",
-      "product_title_ar": "عنوان المنتج 14",
-      "product_variant": "lime",
-      "isFeatures": false
+      "product_title": "Product Title 3",
+      "product_title_ar": "عنوان المنتج 3",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "mixes"
    },
    {
       "id": 15,
       "sequence": 15,
-      "product_img": "./serises-3.png",
-      "product_title": "Product Title 15",
-      "product_title_ar": "عنوان المنتج 15",
-      "product_variant": "lemon",
-      "isFeatures": false
+      "product_img": "./serises-4.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 4",
+      "product_title_ar": "عنوان المنتج 4",
+      "product_variant": "bluberry",
+      "isFeatures": false,
+      "category": "prime series"
    },
    {
       "id": 16,
       "sequence": 16,
-      "product_img": "./serises-4.png",
+      "product_img": "./serises-1.png",
       "hover_img": "./serises-2.png",
-
-      "product_title": "Product Title 16",
-      "product_title_ar": "عنوان المنتج 16",
-      "product_variant": "bluberry",
-      "isFeatures": false
+      "product_title": "Product Title 5",
+      "product_title_ar": "عنوان المنتج 5",
+      "product_variant": "four",
+      "isFeatures": false,
+      "category": "classics"
    },
    {
       "id": 17,
       "sequence": 17,
-      "product_img": "./serises-1.png",
+      "product_img": "./serises-2.png",
       "hover_img": "./serises-2.png",
-
-      "product_title": "Product Title 17",
-      "product_title_ar": "عنوان المنتج 17",
-      "product_variant": "four",
-      "isFeatures": false
+      "product_title": "Product Title 6",
+      "product_title_ar": "عنوان المنتج 6",
+      "product_variant": "lime",
+      "isFeatures": false,
+      "category": "mixes"
    },
    {
       "id": 18,
       "sequence": 18,
-      "product_img": "./serises-2.png",
+      "product_img": "./serises-3.png",
       "hover_img": "./serises-2.png",
-
-      "product_title": "Product Title 18",
-      "product_title_ar": "عنوان المنتج 18",
-      "product_variant": "lime",
-
-      "isFeatures": false
+      "product_title": "Product Title 7",
+      "product_title_ar": "عنوان المنتج 7",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "prime series"
    },
    {
       "id": 19,
       "sequence": 19,
-      "product_img": "./serises-3.png",
+      "product_img": "./serises-4.png",
       "hover_img": "./serises-2.png",
-
-      "product_title": "Product Title 19",
-      "product_title_ar": "عنوان المنتج 19",
-      "product_variant": "lemon",
-      "isFeatures": false
+      "product_title": "Product Title 8",
+      "product_title_ar": "عنوان المنتج 8",
+      "product_variant": "bluberry",
+      "isFeatures": false,
+      "category": "classics"
    },
    {
       "id": 20,
       "sequence": 20,
-      "product_img": "./serises-4.png",
+      "product_img": "./serises-1.png",
       "hover_img": "./serises-2.png",
-      "product_title": "Product Title 20",
-      "product_title_ar": "عنوان المنتج 20",
-      "product_variant": "bluberry",
-      "isFeatures": false
+      "product_title": "Product Title 9",
+      "product_title_ar": "عنوان المنتج 9",
+      "product_variant": "four",
+      "isFeatures": false,
+      "category": "mixes"
+   },
+   {
+      "id": 21,
+      "sequence": 21,
+      "product_img": "./serises-2.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 10",
+      "product_title_ar": "عنوان المنتج 10",
+      "product_variant": "lime",
+      "isFeatures": false,
+      "category": "prime series"
+   },
+   {
+      "id": 22,
+      "sequence": 22,
+      "product_img": "./serises-3.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 11",
+      "product_title_ar": "عنوان المنتج 11",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "classics"
+   },
+   {
+      "id": 23,
+      "sequence": 23,
+      "product_img": "./serises-3.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 11",
+      "product_title_ar": "عنوان المنتج 11",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "classics"
+   },
+   {
+      "id": 24,
+      "sequence": 24,
+      "product_img": "./serises-3.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 11",
+      "product_title_ar": "عنوان المنتج 11",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "classics"
+   },
+   {
+      "id": 25,
+      "sequence": 25,
+      "product_img": "./serises-3.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 11",
+      "product_title_ar": "عنوان المنتج 11",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "classics"
+   },
+   {
+      "id": 26,
+      "sequence": 26,
+      "product_img": "./serises-3.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 11",
+      "product_title_ar": "عنوان المنتج 11",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "classics"
+   },
+   {
+      "id": 27,
+      "sequence": 27,
+      "product_img": "./serises-3.png",
+      "hover_img": "./serises-2.png",
+      "product_title": "Product Title 11",
+      "product_title_ar": "عنوان المنتج 11",
+      "product_variant": "lemon",
+      "isFeatures": false,
+      "category": "classics"
    }
 ]

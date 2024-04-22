@@ -146,7 +146,7 @@
                 نكهاتنا
             </h1>
         </div>
-        <section class="serises-section section">
+        <!-- <section class="serises-section section">
             <div class="container ">
                 <div class="serises-section-title">
                     <div class="serises-section-title-shape" data-aos="zoom-in">
@@ -160,7 +160,11 @@
                     عرض المزيد
                 </button>
             </div>
-        </section>
+        </section> -->
+
+        <div id="app">
+            <!-- Dynamic sections will be added here -->
+        </div>
         <footer class="footer ">
             <div class="container">
                 <div class="row justify-content-between">
@@ -238,57 +242,6 @@
         });
 
         document.addEventListener("DOMContentLoaded", function () {
-            const productContainer = document.getElementById("productContainer");
-            const viewMoreBtn = document.getElementById("viewMoreBtn");
-            let startIndex = 0; // Start index for displaying products
-            const itemsPerPage = 8; // Number of items to display per page
-
-            // Function to fetch and display products
-            function fetchAndDisplayProducts(start, end) {
-                fetch('../data.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        // Slice the data array to get the subset to display
-                        const productsToDisplay = data.slice(start, end);
-                        let currentIndex = 0;
-                        // Construct HTML for each product and append it to the container
-                        productsToDisplay.forEach(product => {
-
-                            const animationDirection = currentIndex % 2 === 0 ? 'fade-right' :
-                                'fade-left';
-
-                            // Update the index for the next iteration
-                            currentIndex++;
-
-                            productContainer.innerHTML += `
-                            <div class="col-md-3"  data-aos="${animationDirection}">
-                            <div class="serises-box ${product.product_variant.toLowerCase().replace(" ", "-")}">
-                                <div class="shape">
-                                <svg width="285" height="286" viewBox="0 0 285 286" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M285 285.369H142.5C63.8 285.369 0 221.569 0 142.869C0 64.1691 63.8 0.369141 142.5 0.369141C221.2 0.369141 285 64.1691 285 142.869V285.369Z" fill="#1D1D1D" />
-                                </svg>
-                                </div>
-                                <img src="../assets/img/${product.product_img}" alt="" class="w-100 main-img">
-                                <img src="../assets/img/${product.hover_img}" alt="" class="w-100 hover-img">
-                                <span>${product.product_title_ar}</span>
-                            </div>
-                            </div>
-                             `;
-                        });
-                    })
-                    .catch(error => console.error('Error fetching products:', error));
-            }
-
-            // Initial fetch and display of products
-            fetchAndDisplayProducts(startIndex, startIndex + itemsPerPage);
-
-            // Event listener for the "View More" button
-            viewMoreBtn.addEventListener("click", function () {
-                // Increment the startIndex to get the next set of products
-                startIndex += itemsPerPage;
-                // Fetch and display the next set of products
-                fetchAndDisplayProducts(startIndex, startIndex + itemsPerPage);
-            });
 
 
             document.getElementById("scrollToTop").addEventListener('click', (() => {
@@ -309,7 +262,147 @@
                     document.getElementById("scrollToTop").style.display = "none";
                 }
             }
+
+
         });
+
+        document.addEventListener('DOMContentLoaded', async function () {
+            const products = await fetchProducts();
+            const categories = groupProductsByCategory(products);
+            const app = document.getElementById('app');
+
+            // Loop through each category and create the corresponding section
+            for (const category in categories) {
+                const section = createCategorySection(category, categories[category]);
+                app.appendChild(section);
+            }
+        });
+
+        async function fetchProducts() {
+            const response = await fetch('../data.json');
+            const data = await response.json();
+            return data;
+        }
+
+        function groupProductsByCategory(products) {
+            const categories = {};
+            products.forEach(product => {
+                if (!categories[product.category]) {
+                    categories[product.category] = [];
+                }
+                categories[product.category].push(product);
+            });
+            return categories;
+        }
+
+        function createCategorySection(category, products) {
+            const section = document.createElement('section');
+            section.classList.add('serises-section', 'section');
+
+            const container = document.createElement('div');
+            container.classList.add('container');
+
+            const title = document.createElement('div');
+            title.classList.add('serises-section-title');
+
+            const titleShape = document.createElement('div');
+            titleShape.classList.add('serises-section-title-shape');
+            titleShape.setAttribute('data-aos', 'zoom-in');
+            titleShape.textContent = category;
+
+            title.appendChild(titleShape);
+            container.appendChild(title);
+
+            const row = document.createElement('div');
+            row.classList.add(`${category.replace(/\s+/g, '-')}-row`);
+            row.classList.add('row');
+
+            let currentIndex = 0;
+
+            products.slice(0, 8).forEach(product => {
+                const animationDirection = currentIndex % 2 === 0 ? 'fade-right' : 'fade-left';
+                currentIndex++;
+
+                const productCard = document.createElement('div');
+                productCard.classList.add('col-md-3');
+                productCard.setAttribute('data-aos', animationDirection);
+
+                productCard.innerHTML = `
+            <div class="serises-box ${product.product_variant.toLowerCase().replace(" ", "-")}">
+                <div class="shape">
+                    <svg width="285" height="286" viewBox="0 0 285 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M285 285.369H142.5C63.8 285.369 0 221.569 0 142.869C0 64.1691 63.8 0.369141 142.5 0.369141C221.2 0.369141 285 64.1691 285 142.869V285.369Z" fill="#1D1D1D" />
+                    </svg>
+                </div>
+                <img src="../assets/img/${product.product_img}" alt="" class="w-100 main-img">
+                <img src="../assets/img/${product.hover_img}" alt="" class="w-100 hover-img">
+                <span>${product.product_title}</span>
+            </div>
+        `;
+
+                row.appendChild(productCard);
+            });
+
+            container.appendChild(row);
+
+            if (products.length > 8) {
+                const viewMoreBtn = createViewMoreButton(category, products);
+                container.appendChild(viewMoreBtn);
+            }
+
+            section.appendChild(container);
+
+            return section;
+        }
+
+
+
+
+
+        function createViewMoreButton(category, products) {
+            const viewMoreBtn = document.createElement('button');
+            viewMoreBtn.setAttribute('data-aos', 'zoom-in-up');
+            viewMoreBtn.textContent = 'عرض المزيد';
+
+            viewMoreBtn.addEventListener('click', function () {
+                const row = document.querySelector(`.${category.replace(/\s+/g, '-')}-row`);
+
+                console.log(row);
+                const startIndex = row.children.length - 1; // Exclude the "View More" button
+                const endIndex = Math.min(startIndex + 8, products.length);
+
+                for (let i = startIndex; i < endIndex; i++) {
+                    const product = products[i];
+                    const animationDirection = i % 2 === 0 ? 'fade-right' : 'fade-left';
+
+                    const productCard = document.createElement('div');
+                    productCard.classList.add('col-md-3');
+                    productCard.setAttribute('data-aos', animationDirection);
+
+                    productCard.innerHTML = `
+                <div class="serises-box ${product.product_variant.toLowerCase().replace(" ", "-")}">
+                    <div class="shape">
+                        <svg width="285" height="286" viewBox="0 0 285 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M285 285.369H142.5C63.8 285.369 0 221.569 0 142.869C0 64.1691 63.8 0.369141 142.5 0.369141C221.2 0.369141 285 64.1691 285 142.869V285.369Z" fill="#1D1D1D" />
+                        </svg>
+                    </div>
+                    <img src="../assets/img/${product.product_img}" alt="" class="w-100 main-img">
+                    <img src="../assets/img/${product.hover_img}" alt="" class="w-100 hover-img">
+                    <span>${product.product_title}</span>
+                </div>
+            `;
+
+                    row.appendChild(productCard, viewMoreBtn);
+                }
+
+                // Hide the "View More" button if all products have been displayed
+                if (endIndex === products.length) {
+                    viewMoreBtn.style.display = 'none';
+                }
+            });
+
+            return viewMoreBtn;
+        }
     </script>
 </body>
 
